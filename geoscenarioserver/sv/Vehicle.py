@@ -14,7 +14,6 @@ from geoscenarioserver.Actor import *
 from geoscenarioserver.gsc.GSParser import Node
 from geoscenarioserver.mapping.LaneletMap import LaneletMap
 from geoscenarioserver.requirements.RequirementViolationEvents import ScenarioCompletion
-from geoscenarioserver.shm.SimSharedMemoryServer import *
 from geoscenarioserver.SimConfig import *
 from geoscenarioserver.sv.SDVPlanner import *
 from geoscenarioserver.sv.SDVRoute import SDVRoute
