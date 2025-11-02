@@ -99,7 +99,8 @@ deepdiff = "*"
 scripts = ["colcon_ws/install/setup.bash"]
 
 [feature.humble.tasks]
-ros_gss = "python3 geoscenarioserver/GSServer.py"
+gss = "python3 geoscenarioserver/GSServer.py"
+ros_gss = { cmd = "ros2 run geoscenarioserver_ros geoscenarioserver_ros", depends-on = ["ros_client_build_release"] }
 ros_client_build = { cmd = "bash scripts/pixi_build_ros2_client.bash --symlink-install", outputs = ["colcon_ws/install/setup.bash"] }
 ros_client_build_release = { cmd = "bash scripts/pixi_build_ros2_client.bash", outputs = ["colcon_ws/install/setup.bash"] }
 ros_client = { cmd = "ros2 run geoscenario_client geoscenario_client", depends-on = ["ros_client_build_release"] }
