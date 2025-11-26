@@ -11,7 +11,6 @@ from geoscenarioserver.util.Utils import *
 from geoscenarioserver.Actor import *
 from geoscenarioserver.sp.SPPlanner import *
 from geoscenarioserver.sp.SPPlannerState import *
-from geoscenarioserver.shm.SimSharedMemoryServer import *
 from geoscenarioserver.util.Utils import kalman, distance_point_to_border
 from geoscenarioserver.util.Transformations import normalize
 from geoscenarioserver.SimTraffic import *

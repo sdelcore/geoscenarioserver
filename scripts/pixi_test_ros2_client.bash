@@ -13,7 +13,7 @@ fi
 cd ${REPO_DIR}
 pixi run ros_client_build_release
 pixi run rqt_topic &
-pixi run ${ROS_CLIENT} &
+pixi run ros_gss &
 pixi run ros_mock_co_simulator &
 
 shutdown_nodes() {
